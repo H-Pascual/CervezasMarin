@@ -1,0 +1,213 @@
+header {
+  a > img{
+    @include animation(mover, 1s, ease-in-out);
+  }
+  letter-spacing: 1.3px;
+  width: 100%;
+  background-color: $colorFondo;
+  font-family: $fuentesTitulo;
+  float: top;
+  img {
+    width: 70px;
+    padding: 20px 10px;
+  }
+  nav {
+    float: right;
+    margin: 1em 1em;
+  }
+  ul {
+    a {
+      vertical-align: middle;
+      #usuario {
+        width: 34px;
+      }
+      img {
+        width: 40px;
+        padding: 0px;
+      }
+      font-size: 1.7em;
+      margin: 0px 10px;
+    }
+
+    & > a {
+      @include transition(padding, 0.4s, ease-out);
+    }
+  }
+  @include responsive(medium) {
+    li {
+      display: contents;
+    }
+    li.menu {
+      display: none;
+    }
+  }
+  @include responsive(small) {
+    nav {
+      margin: 0em 3em;
+    }
+    li {
+      display: none;
+      margin: 0.1em 0.5em;
+    }
+    li.menu {
+      display: contents;
+    }
+  }
+
+  li.menu {
+    cursor: pointer;
+    img {
+      width: 45px;
+    }
+    ul.submenu {
+      z-index: 2;
+      margin-top: -2.3em;
+    }
+    &:hover {
+      ul.submenu {
+        position: absolute;
+        padding-left: 5em;
+        display: grid;
+        padding-top: 1em;
+        li {
+          display: block;
+        }
+      }
+    }
+  }
+}
+a > .activo {
+  color: $colorTextoActivo;
+}
+
+.dropdown {
+  cursor: pointer;
+  .items-dropdown {
+    z-index: 2;
+    display: none;
+    margin-top: -0.5em;
+    margin-left: 5em;
+  }
+  .items-dropdown-vendidas, .items-dropdown-especiales, .items-dropdown-sabores{
+    display: none;
+    position: absolute;
+    margin-left: 12.5em;
+    margin-top: -2.5em;
+  }
+  .dropdown-vendidas{
+    padding: 1em;
+    background-color: $colorFondo;
+    &:hover{
+      .items-dropdown-vendidas{
+        display: grid;
+      }
+    }
+  }
+  .dropdown-sabores{
+    padding: 1em;
+    background-color: $colorFondo;
+    &:hover{
+      .items-dropdown-sabores{
+        display: grid;
+      }
+    }
+  }
+  .dropdown-especiales{
+    padding: 1em;
+    background-color: $colorFondo;
+    &:hover{
+      .items-dropdown-especiales{
+        display: grid;
+      }
+    }
+
+  }
+  &:hover {
+    .items-dropdown {
+      position: absolute;
+      padding: 1em;
+      display: grid;
+      li {
+        display: block;
+        padding: 0.2em;
+      }
+    }
+  }
+}
+
+.footer,
+.header {
+  width: 100%;
+  margin: 0px;
+  margin-bottom: -5px;
+  padding: 0px;
+  background-color: white;
+}
+
+footer {
+  margin: 0px;
+  padding: 1em 0px;
+  width: 100%;
+  background-color: $colorFondo;
+  font-family: $fuentesTitulo;
+  text-align: center;
+  font-size: 1.2em;
+  ul {
+    margin: 5px;
+  }
+  @include responsive(medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include responsive(small) {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+#buscar {
+  @include responsive(small) {
+    display: none;
+  }
+  display: inline-block;
+  &:hover {
+    input {
+      display: block;
+      padding-left: 1em;
+    }
+    svg {
+      display: none;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+  input {
+    display: none;
+    height: 3em;
+    max-width: 10em;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    color: $colorTextoActivo;
+    @include transition(ease, 0.2s);
+    &::placeholder {
+      color: lighten($colorTextoActivo, 50%);
+    }
+    &:focus,
+    &:hover {
+      outline: none;
+      border-color: $colorFondo;
+    }
+    &:focus{
+      background-color: lighten($colorFondo, 20%);
+      color: lighten($colorTextoActivo, 20%);
+    }
+  }
+  svg {
+    @include transition(ease, 0.2s);
+    position: relative;
+    fill: $colorTexto;
+    width: 1.2em;
+    padding-right: 1em;
+  }
+}

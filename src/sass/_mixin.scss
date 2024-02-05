@@ -1,0 +1,34 @@
+@mixin colores($color, $fondo) {
+  background-color: $fondo;
+  color: $color;
+}
+
+@mixin coloresHover($color, $fondo) {
+  color: $color;
+  background-color: $fondo;
+}
+
+@mixin transition($property, $duration, $timing: linear) {
+  transition: $property $duration $timing;
+  -webkit-transition: $property $duration $timing;
+  -moz-transition: $property $duration $timing;
+}
+
+@mixin animation($name, $duration, $timing: linear) {
+  animation: $name $duration $timing;
+  -webkit-animation: $name $duration $timing;
+  -moz-animation: $name $duration $timing;
+}
+
+@mixin responsive($size) {
+  @if $size == medium {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+  @if $size == small {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}

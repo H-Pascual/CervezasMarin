@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/logo.svg" />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <title>Inicio | Cervezas Marín</title>
+  </head>
+  <body>
+    <!-- Inicio Header -->
+    <header>
+      <a href="#"><img src="assets/icons/logo.svg" alt="Cerveza" /></a>
+      <!-- Inicio Navegacion -->
+      <nav>
+        <ul>
+          <a href="#"><li class="activo">Inicio</li></a>
+          <li class="menu">
+            <a href="src/productos.html"
+              ><li class="dropdown">
+                Cervezas
+                <ul class="items-dropdown">
+                  <a><li class="dropdown-vendidas">Las Más Vendidas
+                    <ul class="items-dropdown-vendidas">
+                      <a href="./src/productos/original.html"><li>Original</li></a>
+                      <a href="./src/productos/elegida.html"><li>Elegida</li></a>
+                    </ul>
+                  </li></a>
+                  <a><li class="dropdown-sabores">Nuevos Sabores
+                    <ul class="items-dropdown-sabores">
+                      <a href="./src/productos/extra.html"><li>Extra</li></a>
+                      <a href="./src/productos/suave.html"><li>Suave</li></a>
+                      <a href="./src/productos/tostada.html"><li>Tostada</li></a>
+                      <a href="./src/productos/clasica.html"><li>Clásica</li></a>
+                    </ul>
+                  </li></a>
+                  <a><li class="dropdown-especiales">Especiales
+                    <ul class="items-dropdown-especiales">
+                      <a href="./src/productos/singluten.html"
+                      ><li>Sin Gluten</li></a
+                    >
+                    <a href="./src/productos/sinalcohol.html"
+                      ><li>Sin Alcohol</li></a
+                    >
+                    </ul>
+                  </li></a>
+                </ul>
+              </li></a
+            >
+          </li>
+          <a href="src/contacto.html"><li>Contacto</li></a>
+          <a href="src/nosotros.html"><li>Nosotros</li></a>
+          <a href="src/login.html"
+            ><li>
+              <img
+                src="assets/icons/usuario.svg"
+                alt="Icono Usuario"
+                id="usuario"
+              /></li
+          ></a>
+          <a href="src/carrito.html"
+            ><li>
+              <img
+                src="assets/icons/carrito.svg"
+                alt="Carrito de la compra"
+              /></li
+          ></a>
+          
+          <a href="#"
+            ><li id="buscar">
+              <search>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                <g>
+                  <path
+                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                  ></path>
+                </g>
+              </svg>
+              <input type="search" placeholder="Buscar" />
+            </search>
+            </li
+          ></a>
+          <li class="menu">
+            <img src="assets/icons/menu.svg" alt="Menu" />
+            <ul class="submenu">
+              <a href="#"><li class="activo">Inicio</li></a>
+              <a href="src/productos.html"><li>Cervezas</li></a>
+              <a href="src/contacto.html"><li>Contacto</li></a>
+              <a href="src/nosotros.html"><li>Nosotros</li></a>
+              <a href="src/login.html"><li>Perfil</li></a>
+              <a href="src/carrito.html"><li>Carrito</li></a>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- Fin Navegacion -->
+      <img class="header" src="./assets/img/contenidos/header.png" />
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Contenido -->
+    <main>
+      <!-- Inicio Imagen Promocional -->
+      <section>
+        <img
+          src="assets/img/contenidos/banner_small.png"
+          alt="Imagen Promocional Cerveza"
+          width="100%"
+        />
+      </section>
+      <!-- Fin Imagen Promocional-->
+
+      <!-- Inicio Cervezas Destacadas -->
+      <section>
+        <h1>Cervezas Artesanas</h1>
+        <h2>Más Vendidas</h2>
+        <div class="centrado">
+          <article class="destacadas">
+            <a href="src/productos/elegida.html"
+              ><img
+                src="assets/img/productos/cerveza2.png"
+                alt="Cerveza Elegida"
+            /></a>
+            <a href="src/productos/suave.html"
+              ><img src="assets/img/productos/cerveza5.png" alt="Cerveza Suave"
+            /></a>
+            <a href="src/productos/tostada.html"
+              ><img
+                src="assets/img/productos/cerveza7.png"
+                alt="Cerveza Tostada"
+            /></a>
+            <a href="src/productos/clasica.html"
+              ><img
+                src="assets/img/productos/cerveza8.png"
+                alt="Cerveza Clasica"
+            /></a>
+            <div class="cervezaspc">
+              <a href="src/productos/extra.html"
+                ><img
+                  src="assets/img/productos/cerveza4.png"
+                  alt="Cerveza Extra"
+              /></a>
+            </div>
+          </article>
+        </div>
+        <div class="centrado">
+          <a class="vermas" href="src/productos.html">VER MÁS</a>
+        </div>
+      </section>
+      <!-- Fin Cervezas Destacadas -->
+
+      <!-- Inicio Categorias Cerveza -->
+      <section>
+        <h2>Categorías de Cervezas</h2>
+        <article class="contenedor" id="categoria">
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo1.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo9.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo3.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo4.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo5.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo6.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo7.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo8.png" />
+          </article>
+        </article>
+      </section>
+      <!-- Fin Categorias Cerveza-->
+
+      <!-- Inicio Video Cervezas-->
+      <section class="video">
+        <video width="100%" autoplay muted loop>
+          <source src="./assets/video/comercial.mp4" type="video/mp4" />
+          Tu buscador no permite reproduccir el video.
+        </video>
+      </section>
+      <!-- Fin Video Cervezas-->
+
+      <!-- Inicio Estadisticas Clientes -->
+      <section class="fondo clientes">
+        <article class="estadisticas">
+          <p>Cervezas vendidas</p>
+          <p class="number">293.482</p>
+        </article>
+        <article class="estadisticas">
+          <p>Clientes satisfechos</p>
+          <p class="number">94.837</p>
+        </article>
+        <article class="estadisticas">
+          <p>Ingresos conseguidos</p>
+          <p class="number">1.598.328</p>
+        </article>
+      </section>
+      <img class="header" src="./assets/img/contenidos/header2.png" />
+      <!-- Fin Estadisticas Clientes -->
+
+      <!-- Inicio Explicación Cervezas -->
+      <section>
+        <article class="info derecha">
+          <img src="./assets/img/contenidos/familia.jpg" />
+          <div class="texto">
+            <h2>¿Cómo creamos nuestras cervezas?</h2>
+            <p>
+              Nuestro proceso de creación de cerveza es un arte que ha sido
+              perfeccionado con el tiempo, fusionando ingredientes de primera
+              calidad con un toque de cariño artesanal. Desde la selección de
+              los mejores granos hasta el envasado final, cada paso refleja
+              nuestro <span class="subrayado">compromiso con la excelencia.</span> Descubre con nosotros el
+              mundo de las Cervezas Marin y experimenta el sabor de la
+              autenticidad en cada sorbo.
+            </p>
+          </div>
+        </article>
+        <article class="info izquierda">
+          <div class="texto">
+            <h2>Fabricadas con cariño</h2>
+            <p>
+              En las Bodegas Cervezas Marin, la cerveza no es solo una bebida,
+              es una experiencia. Nuestra dedicación a la creación de cervezas
+              de calidad superior comienza con la cuidadosa selección de
+              ingredientes. Cada grano, lúpulo y levadura son elegidos con
+              precisión para garantizar un <span class="subrayado">sabor único y auténtico.</span> Pero no se
+              trata solo de ingredientes, se trata de amor por la cerveza. Cada
+              lote se elabora con cariño y atención a los detalles, resultando
+              en una cerveza que no solo es buena, sino excepcional. Acompáñanos
+              en este viaje cervecero y descubre el sabor que solo Cervezas
+              Marin puede ofrecer.
+            </p>
+          </div>
+          <img src="./assets/img/contenidos/nadar.jpg" />
+        </article>
+        <div class="centrado">
+          <a class="vermas" href="src/nosotros.html">SABER MÁS</a>
+        </div>
+      </section>
+      <!-- Fin Explicación Cervezas -->
+    </main>
+    <!-- Fin Contenido -->
+
+    <!-- Inicio Footer -->
+    <img class="footer" src="./assets/img/contenidos/footer.png" />
+    <footer>
+      <address>
+        Creado por: <br /><a
+          href="https://portafolio.hectorpascualmarin.com"
+          target="_blank"
+          >Héctor Pascual Marín</a
+        >
+      </address>
+      <ul>
+        <a href="#"><li>Inicio</li></a>
+        <a href="src/productos.html"><li>Cervezas</li></a>
+        <a href="src/nosotros.html"><li>Nosotros</li></a>
+      </ul>
+      <ul>
+        <a href="src/aviso.html"><li>Aviso Legal</li></a>
+        <a href="src/contacto.html"><li>Contacto</li></a>
+        <a href="src/login.html"><li>Perfil</li></a>
+      </ul>
+      <small>cervezasmarin.com © 2024</small>
+    </footer>
+    <!-- Fin Footer -->
+  </body>
+</html>

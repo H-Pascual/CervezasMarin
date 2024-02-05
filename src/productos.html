@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/logo.svg" />
+    <link rel="stylesheet" href="sass/main.scss" />
+    <title>Cervezas | Cervezas Marín</title>
+  </head>
+  <body>
+    <!-- Inicio Header -->
+    <header>
+      <a href="../index.html"
+        ><img src="../assets/icons/logo.svg" alt="Cerveza"
+      /></a>
+      <!-- Inicio Navegacion -->
+      <nav>
+        <ul>
+          <a href="../index.html"><li>Inicio</li></a>
+          <li class="menu">
+            <a href="productos.html"
+              ><li class="dropdown">
+                <span class="activo">Cervezas</span>
+                <ul class="items-dropdown">
+                  <a
+                    ><li class="dropdown-vendidas">
+                      Las Más Vendidas
+                      <ul class="items-dropdown-vendidas">
+                        <a href="./productos/original.html"
+                          ><li>Original</li></a
+                        >
+                        <a href="./productos/elegida.html"><li>Elegida</li></a>
+                      </ul>
+                    </li></a
+                  >
+                  <a
+                    ><li class="dropdown-sabores">
+                      Nuevos Sabores
+                      <ul class="items-dropdown-sabores">
+                        <a href="./productos/extra.html"><li>Extra</li></a>
+                        <a href="./productos/suave.html"><li>Suave</li></a>
+                        <a href="./productos/tostada.html"><li>Tostada</li></a>
+                        <a href="./productos/clasica.html"><li>Clásica</li></a>
+                      </ul>
+                    </li></a
+                  >
+                  <a
+                    ><li class="dropdown-especiales">
+                      Especiales
+                      <ul class="items-dropdown-especiales">
+                        <a href="./productos/singluten.html"
+                          ><li>Sin Gluten</li></a
+                        >
+                        <a href="./productos/sinalcohol.html"
+                          ><li>Sin Alcohol</li></a
+                        >
+                      </ul>
+                    </li></a
+                  >
+                </ul>
+              </li></a
+            >
+          </li>
+          <a href="contacto.html"><li>Contacto</li></a>
+          <a href="nosotros.html"><li>Nosotros</li></a>
+          <a href="login.html"
+            ><li>
+              <img
+                src="../assets/icons/usuario.svg"
+                alt="Icono Usuario"
+                id="usuario"
+              /></li
+          ></a>
+          <a href="carrito.html"
+            ><li>
+              <img
+                src="../assets/icons/carrito.svg"
+                alt="Carrito de la compra"
+              /></li
+          ></a>
+
+          <a href="#"
+            ><li id="buscar">
+              <search>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                  <g>
+                    <path
+                      d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                    ></path>
+                  </g>
+                </svg>
+                <input type="search" placeholder="Buscar"
+              /></search></li
+          ></a>
+          <li class="menu">
+            <img src="../assets/icons/menu.svg" alt="Menu" />
+            <ul class="submenu">
+              <a href="../index.html"><li>Inicio</li></a>
+              <a href="#"><li class="activo">Cervezas</li></a>
+              <a href="contacto.html"><li>Contacto</li></a>
+              <a href="nosotros.html"><li>Nosotros</li></a>
+              <a href="login.html"><li>Perfil</li></a>
+              <a href="carrito.html"><li>Carrito</li></a>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- Fin Navegacion -->
+      <img class="header" src="../assets/img/contenidos/header.png" />
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Contenido -->
+    <main>
+      <!-- Inicio Productos -->
+      <h1>Cervezas</h1>
+      <section class="productos-contenedor">
+        <section class="producto">
+          <article class="reseña">
+            <div class="encabezado">
+              <div class="imagen">
+                <a href="productos/tostada.html">
+                  <img
+                    src="../assets/img/productos/cerveza7.png"
+                    alt="Cerveza Tostada"
+                /></a>
+              </div>
+              <div class="texto">
+                <p class="nombre">Cerveza Tostada 33cl</p>
+                <p class="mensaje">
+                  1.49€ <sup class="precioAnterior">2.50€</sup>
+                </p>
+                <a href="productos/tostada.html"
+                  ><div class="comprar">Comprar</div></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="reseña">
+            <div class="encabezado">
+              <div class="imagen">
+                <a href="productos/original.html">
+                  <img
+                    src="../assets/img/productos/cerveza1.png"
+                    alt="Cerveza Original"
+                /></a>
+              </div>
+              <div class="texto">
+                <p class="nombre">Cerveza Original 33cl</p>
+                <p class="mensaje">
+                  1.99€ <sup class="precioAnterior">3.50€</sup>
+                </p>
+                <a href="productos/original.html">
+                  <div class="comprar">Comprar</div></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="reseña">
+            <div class="encabezado">
+              <div class="imagen">
+                <a href="productos/elegida.html">
+                  <img
+                    src="../assets/img/productos/cerveza2.png"
+                    alt="Cerveza Elegida"
+                /></a>
+              </div>
+              <div class="texto">
+                <p class="nombre">Cerveza Elegida 33cl</p>
+                <p class="mensaje">
+                  1.49€ <sup class="precioAnterior">2.50€</sup>
+                </p>
+                <a href="productos/elegida.html"
+                  ><div class="comprar">Comprar</div></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="reseña">
+            <div class="encabezado">
+              <div class="imagen">
+                <a href="productos/singluten.html">
+                  <img
+                    src="../assets/img/productos/cerveza3.png"
+                    alt="Cerveza Sin Gluten"
+                /></a>
+              </div>
+              <div class="texto">
+                <p class="nombre">Cerveza Sin Gluten 33cl</p>
+                <p class="mensaje">
+                  1.99€ <sup class="precioAnterior">3.50€</sup>
+                </p>
+                <a href="productos/singluten.html"
+                  ><div class="comprar">Comprar</div></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="reseña">
+            <div class="encabezado">
+              <div class="imagen">
+                <a href="productos/extra.html">
+                  <img
+                    src="../assets/img/productos/cerveza4.png"
+                    alt="Cerveza Extra"
+                  />
+                </a>
+              </div>
+              <div class="texto">
+                <p class="nombre">Cerveza Extra 33cl</p>
+                <p class="mensaje">
+                  1.49€ <sup class="precioAnterior">2.50€</sup>
+                </p>
+                <a href="productos/extra.html"
+                  ><div class="comprar">Comprar</div></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="reseña">
+            <div class="encabezado">
+              <div class="imagen">
+                <a href="productos/suave.html"
+                  ><img
+                    src="../assets/img/productos/cerveza5.png"
+                    alt="Cerveza Suave"
+                /></a>
+              </div>
+              <div class="texto">
+                <p class="nombre">Cerveza Suave 33cl</p>
+                <p class="mensaje">
+                  1.49€ <sup class="precioAnterior">2.50€</sup>
+                </p>
+                <a href="productos/suave.html"
+                  ><div class="comprar">Comprar</div></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="reseña">
+            <div class="encabezado">
+              <div class="imagen">
+                <a href="productos/sinalcohol.html"
+                  ><img
+                    src="../assets/img/productos/cerveza6.png"
+                    alt="Cerveza Sin Alcohol"
+                /></a>
+              </div>
+              <div class="texto">
+                <p class="nombre">Cerveza Sin Alcohol 33cl</p>
+                <p class="mensaje">
+                  1.49€ <sup class="precioAnterior">2.50€</sup>
+                </p>
+                <a href="productos/sinalcohol.html"
+                  ><div class="comprar">Comprar</div></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="reseña">
+            <div class="encabezado">
+              <div class="imagen">
+                <a href="productos/clasica.html"
+                  ><img
+                    src="../assets/img/productos/cerveza8.png"
+                    alt="Cerveza Clasica"
+                /></a>
+              </div>
+              <div class="texto">
+                <p class="nombre">Cerveza Clasica 33cl</p>
+                <p class="mensaje">
+                  1.99€ <sup class="precioAnterior">3.50€</sup>
+                </p>
+                <a href="productos/clasica.html"
+                  ><div class="comprar">Comprar</div></a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- Inicio Filtros -->
+        <aside class="filtros">
+          <h2>Filtros</h2>
+          <form>
+            <label for="precio">Filtrar por precio</label>
+            <p>0€<input type="range" min="0" max="20" step="1" />20€</p>
+            <label for="tipo">Filtrar por tipo</label><br />
+            <input type="checkbox" id="suave" type="tipo" />Dulce<br />
+            <input type="checkbox" id="suave" type="tipo" />Amarga<br />
+            <input type="checkbox" id="suave" type="tipo" />Sin Alcohol<br />
+            <button class="boton" type="submit">Buscar</button>
+          </form>
+        </aside>
+        <!-- Fin Filtros-->
+      </section>
+      <!-- Fin Productos-->
+
+      <!-- Inicio Categorias Cerveza -->
+      <section>
+        <h2>Categorías de Cervezas</h2>
+        <article class="contenedor" id="categoria">
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo1.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo9.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo3.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo4.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo5.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo6.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo7.png" />
+          </article>
+          <article class="categorias">
+            <img src="../assets/img/productos/tipo8.png" />
+          </article>
+        </article>
+      </section>
+      <!-- Fin Categorias Cerveza-->
+    </main>
+    <!-- Fin Contenido -->
+
+    <!-- Inicio Footer -->
+    <img class="footer" src="../assets/img/contenidos/footer.png" />
+    <footer>
+      <address>
+        Creado por: <br /><a
+          href="https://portafolio.hectorpascualmarin.com"
+          target="_blank"
+          >Héctor Pascual Marín</a
+        >
+      </address>
+      <ul>
+        <a href="../index.html"><li>Inicio</li></a>
+        <a href="#"><li>Cervezas</li></a>
+        <a href="nosotros.html"><li>Nosotros</li></a>
+      </ul>
+      <ul>
+        <a href="aviso.html"><li>Aviso Legal</li></a>
+        <a href="contacto.html"><li>Contacto</li></a>
+        <a href="login.html"><li>Perfil</li></a>
+      </ul>
+      <small>cervezasmarin.com © 2024</small>
+    </footer>
+    <!-- Fin Footer -->
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assets/icons/logo.svg" />
+    <link rel="stylesheet" href="sass/main.scss" />
+    <title>Login | Cervezas Marín</title>
+  </head>
+  <body>
+    <!-- Inicio Header -->
+    <header>
+      <a href="../index.html"
+        ><img src="../assets/icons/logo.svg" alt="Cerveza"
+      /></a>
+      <!-- Inicio Navegacion -->
+      <nav>
+        <ul>
+          <a href="../index.html"><li>Inicio</li></a>
+          <li class="menu">
+            <a href="productos.html"
+              ><li class="dropdown">
+                Cervezas
+                <ul class="items-dropdown">
+                  <a><li class="dropdown-vendidas">Las Más Vendidas
+                    <ul class="items-dropdown-vendidas">
+                  <a href="./productos/original.html"><li>Original</li></a>
+                  <a href="./productos/elegida.html"><li>Elegida</li></a>
+                </ul>
+              </li></a>
+              <a><li class="dropdown-sabores">Nuevos Sabores
+                <ul class="items-dropdown-sabores">
+                  <a href="./productos/extra.html"><li>Extra</li></a>
+                  <a href="./productos/suave.html"><li>Suave</li></a>
+                  <a href="./productos/tostada.html"><li>Tostada</li></a>
+                  <a href="./productos/clasica.html"><li>Clásica</li></a>
+                </ul>
+              </li></a>
+              <a><li class="dropdown-especiales">Especiales
+                <ul class="items-dropdown-especiales">
+                  <a href="./productos/singluten.html"><li>Sin Gluten</li></a>
+                  <a href="./productos/sinalcohol.html"><li>Sin Alcohol</li></a>
+                </ul>
+              </li></a>
+                </ul>
+              </li></a
+            >
+          </li>
+          <a href="contacto.html"><li>Contacto</li></a>
+          <a href="nosotros.html"><li>Nosotros</li></a>
+          <a href="login.html"
+            ><li>
+              <img
+                src="../assets/icons/usuario.svg"
+                alt="Icono Usuario"
+                id="usuario"
+              /></li
+          ></a>
+          <a href="#"
+            ><li>
+              <img
+                src="../assets/icons/carrito.svg"
+                alt="Carrito de la compra"
+              /></li
+          ></a>
+            <a href="#"
+              ><li id="buscar">
+                <search>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                  <g>
+                    <path
+                      d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                    ></path>
+                  </g>
+                </svg>
+                <input type="search" placeholder="Buscar" /></search></li
+            ></a>
+          
+          <li class="menu">
+            <img src="../assets/icons/menu.svg" alt="Menu" />
+            <ul class="submenu">
+              <a href="../index.html"><li>Inicio</li></a>
+              <a href="productos.html"><li>Cervezas</li></a>
+              <a href="contacto.html"><li>Contacto</li></a>
+              <a href="nosotros.html"><li>Nosotros</li></a>
+              <a href="login.html"><li>Perfil</li></a>
+              <a href="#"><li class="activo">Carrito</li></a>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- Fin Navegacion -->
+      <img class="header" src="../../assets/img/contenidos/header.png" />
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Contenido -->
+    <main>
+      <h1>Carrito</h1>
+      <form class="formulario" action="./envio.html">
+        <section class="producto-carrito">
+          <img src="../assets/img/productos/cerveza2.png" />
+          <div class="contenido">
+            <h2>Cerveza Elegida 33cl</h2>
+            <p>1.49€ <span class="precioAnterior">2.50€</span></p>
+            <a href="#" class="boton">Borrar</a>
+          </div>
+        </section>
+        <section class="producto-carrito">
+          <img src="../assets/img/productos/cerveza4.png" />
+          <div class="contenido">
+            <h2>Cerveza Extra 33cl</h2>
+            <p>1.49€ <span class="precioAnterior">2.50€</span></p>
+            <a href="#" class="boton">Borrar</a>
+          </div>
+        </section>
+        <section class="producto-carrito">
+          <img src="../assets/img/productos/cerveza8.png" />
+          <div class="contenido">
+            <h2>Cerveza Clásica 33cl</h2>
+            <p>1.99€ <span class="precioAnterior">3.50€</span></p>
+            <a href="#" class="boton">Borrar</a>
+          </div>
+        </section>
+        <p class="precio">Precio: 4.97€</p>
+        <p class="precio">IVA: 1.04€</p>
+        <p id="precioTotal">Total: 6.01€</p>
+        <button type="submit" class="comprar">Comprar</button>
+      </form>
+    </main>
+    <!-- Fin Contenido -->
+
+    <!-- Inicio Footer -->
+    <img class="footer" src="../../assets/img/contenidos/footer.png" />
+    <footer>
+      <address>
+        Creado por: <br /><a
+          href="https://portafolio.hectorpascualmarin.com"
+          target="_blank"
+          >Héctor Pascual Marín</a
+        >
+      </address>
+      <ul>
+        <a href="../index.html"><li>Inicio</li></a>
+        <a href="productos.html"><li>Cervezas</li></a>
+        <a href="nosotros.html"><li>Nosotros</li></a>
+      </ul>
+      <ul>
+        <a href="aviso.html"><li>Aviso Legal</li></a>
+        <a href="contacto.html"><li>Contacto</li></a>
+        <a href="login.html"><li>Perfil</li></a>
+      </ul>
+      <small>cervezasmarin.com © 2024</small>
+    </footer>
+    <!-- Fin Footer -->
+  </body>
+</html>

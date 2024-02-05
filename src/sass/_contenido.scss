@@ -1,0 +1,390 @@
+.destacadas {
+  grid-column: 2 / 3;
+  a {
+    background-color: #ffffff;
+  }
+  @include responsive(medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    .cervezaspc{
+      display: contents;
+    }
+    img {
+      width: 10em;
+    }
+    a {
+      padding-top: 2em;
+      &:hover {
+        cursor: pointer;
+        padding-top: 0px;
+        background-color: #ffffff;
+      }
+    }
+  }
+  @include responsive(small) {
+    .cervezaspc{
+      display: none;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    img {
+      width: 11em;
+    }
+    a {
+      padding-top: 3em;
+      &:hover {
+        cursor: pointer;
+        padding-top: 0px;
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+.centrado {
+  display: grid;
+  @include responsive(medium) {
+    grid-template-columns: 3fr 1fr 3fr;
+  }
+  @include responsive(small) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.boton {
+  @extend %boton;
+}
+
+.vermas {
+  @extend %boton;
+  grid-column: 2 / 3;
+}
+
+.info {
+  margin: 2em;
+  img {
+    border-radius: 1%;
+    @include responsive(small) {
+      width: 100%;
+    }
+    @include responsive(medium) {
+      width: 400px;
+    }
+  }
+  p{
+    font-size: 1.2rem;
+  }
+}
+
+.derecha {
+  @include responsive(medium) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    p{
+      margin: 1em;
+      text-align: left;
+    }
+  }
+  @include responsive(small) {
+    img{
+      display: none;
+    }
+  }
+}
+.izquierda {
+  @include responsive(medium) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    p{
+      text-align: right;
+      margin: 1em;
+    }
+  }
+  @include responsive(small){
+    img{
+      display: none;
+    }
+  }
+}
+
+.aviso{
+  margin: 1em;
+  li{
+    list-style:square;
+  }
+  p{
+    text-align: justify;
+  }
+}
+
+.card{
+  @extend %card;
+}
+
+.categorias{
+  @extend %card;
+  @extend %borde;
+}
+
+#categoria{
+  gap: 1em;
+}
+
+.contenedor{
+  margin: 1em;
+  display: grid;
+  @include responsive(medium){
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @include responsive(small){
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.reseñas{
+  margin-bottom: 4em;
+}
+
+.borde{
+  @extend %borde;
+}
+
+.reseña{
+  @extend .borde;
+  @include transition(all, 0.2s);
+  padding: 1em;
+  margin: 1em;
+  &:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  p{
+    font-size: 0.9rem;
+  }
+  time{
+    @include colores(lighten($colorTextoActivo, 50%), $colorFondoVacio);
+  }
+}
+.encabezado{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+    & .imagen{
+      grid-column: 1 / 2;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 999px;
+        background-color: $colorFondo;
+    }
+    .texto{
+      grid-column: 2 / 3;
+    }
+}
+.estrellas{
+  display: flex;
+  justify-content: center;
+  color: $colorFondo;
+  & svg {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+.nombre{
+    color: $colorTextoActivo;
+    font-weight: bold;
+}
+.mensaje{
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  margin-top: 1rem;
+  color: $colorTextoActivo;
+}
+
+.estadisticas{
+  @extend %card;
+  @extend %borde;
+}
+
+.video{
+  margin-bottom: -5px;
+}
+
+.fondo{
+  background-color: $colorFondo;
+  padding: 1em;
+}
+
+.clientes{
+  display: grid;
+  @include responsive(medium){
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include responsive(small){
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  gap: 2em;
+  p{
+    color: $colorTextoActivo;
+    font-weight: bolder;
+    padding: 0px;
+    margin-top: 2em;
+  } 
+  article{
+    margin: 1em;
+    opacity: 75%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  .number{
+    font-size: 3rem;
+    margin: 0.2em;
+  }
+}
+
+.producto{
+  .boton{
+    letter-spacing: 1.5px;
+  }
+  padding: 1em;
+  border-radius: 5px;
+  background-color: lighten($colorFondo, 3%);
+  margin: 1em;
+  @include responsive(medium){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  align-items: center;
+  font-size: 1.2em;
+  img{
+    width: 3em;
+    grid-column: 2 / 3;
+  }
+}
+
+.producto-carrito{
+  @extend .producto;
+  @include responsive(medium){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.precioAnterior{
+  color: darken($colorTexto, 20%);
+  text-decoration: line-through;
+}
+.precio{
+  text-align: end;
+  margin: 0px;
+}
+
+#precioTotal{
+  text-align: end;
+  font-size: 1.7em;
+  margin: 0px;
+}
+
+.equipo-container{
+  display: grid;
+  justify-items: center;
+  gap: 1em;
+  @include responsive(medium){
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include responsive(small){
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+.equipo{
+  width: 50%;
+  padding: 2em;
+  box-shadow: 0 6px 10px $colorTextoActivo;
+  border-radius: 10px;
+  text-align: center;
+  @include colores($colorTexto, $colorFondo);
+  @include transition(all, 0.2s);
+  .foto{
+    width: 5em;
+    margin: auto;
+  }
+  &:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.productos-contenedor{
+  border: 0px;
+  @include responsive(medium){
+    display: grid;
+    grid-template-columns: 80% 20%;
+  }
+}
+
+.producto-unico{
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  align-items: center;
+  justify-items: center;
+}
+
+.articulo{
+  @extend .reseña;
+  text-align: center;
+  .texto{
+    @include colores($colorTextoActivo, $colorFondoVacio);
+    margin: 1em;
+  }
+  &:hover{
+    transform: scale(1);
+  }
+  margin: 2em;
+}
+img.element{
+    width: 5em;
+    @include responsive(small){
+      display: none;
+    }
+}
+
+.label-text{
+  font-size: 0.9em;
+}
+
+#nosotros{
+  text-shadow: 10px 5px 5px $colorFondo;
+}
+
+.aviso-titulo{
+  text-transform:uppercase;
+}
+
+.tachado{
+  text-decoration: line-through;
+}
+
+.aviso-parrafo{
+  text: {
+    transform: capitalize;
+    align: justify;
+  }
+  font: {
+    size: medium;
+    style: italic;
+  }
+}
+
+.comprar{
+  @extend %boton;
+  cursor: pointer;
+}
+
+.filtros{
+  text-align: center;
+  button{
+    cursor: pointer;
+  }
+}
